@@ -27,6 +27,13 @@ body {
     }
 }
 
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .faculty-container {
   display: flex;
   flex-direction: column;
@@ -61,6 +68,14 @@ h2 {
 #pslo {
     background-color: #d5d6d2;
     font-family: 'Marcellus', sans-serif;
+}
+
+#tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #03c6fc;
 }
 
 #faculty {
