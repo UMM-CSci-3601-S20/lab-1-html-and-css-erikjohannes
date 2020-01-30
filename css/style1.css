@@ -72,6 +72,10 @@ h2 {
     font-family: 'EB Garamond', serif;
 }
 
+h4 {
+  margin-bottom: -10px;
+}
+
 .section {
     border-radius: 25px;
     padding: 20px;
@@ -96,6 +100,21 @@ h2 {
   justify-content: left;
   align-items: left;
   background-color: #c5adb8;
+}
+
+#tools-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: right;
+  flex-wrap: wrap;
+}
+
+#tools-legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
 }
 
 #faculty {
