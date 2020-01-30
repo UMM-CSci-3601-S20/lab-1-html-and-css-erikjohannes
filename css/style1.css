@@ -41,6 +41,17 @@ body {
   align-items: center;
 }
 
+.cloud {
+  font-family: 'Arial', sans-sans-serif;
+  text-decoration: none;
+  color:green;
+}
+
+.local {
+  font-family: 'Arial', sans-sans-serif;
+  color: red;
+}
+
 #main-title {
     color: #FFDE7A;
     font-family: 'Patua One', monospace;
@@ -73,9 +84,9 @@ h2 {
 #tools {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #03c6fc;
+  justify-content: left;
+  align-items: left;
+  background-color: #c5adb8;
 }
 
 #faculty {
