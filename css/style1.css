@@ -42,14 +42,23 @@ body {
 }
 
 .cloud {
-  font-family: 'Arial', sans-sans-serif;
-  text-decoration: none;
   color:green;
 }
 
 .local {
-  font-family: 'Arial', sans-sans-serif;
   color: red;
+}
+
+.testing {
+  font-family:"Arial Black";
+}
+
+.ide {
+  font-family:"Courier New";
+}
+
+.version-control {
+  font-family:"Ariel";
 }
 
 #main-title {
