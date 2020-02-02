@@ -20,9 +20,6 @@ body{
   padding: 30px;
   width: 50vw;
   margin: 20px 25vw 20px 25vw;
-}
-
-#pslo, #courses, #tools, #faculty {
   background-color: rgba(255, 200, 200, 0.39);
 }
 
@@ -33,6 +30,9 @@ body{
   align-items: center;
 }
 
+/*
+* Example of grouping
+*/
 #tools-list, #tools-legend {
   margin-right: 15%;
   width: 70%;
@@ -75,6 +75,103 @@ body{
     width: 25%;
     margin-right: 15%;
   }
+}
+
+#tools-content ul {
+  list-style-type: none;
+}
+
+#tools-content ul li{
+  margin-bottom: 5px;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.testing a:link, .testing a:visited {
+  background-color: rgb(0, 100, 0);
+  border-color: rgb(0, 100, 0);
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.testing a:hover, .testing a:active {
+  background-color: green;
+  border-color: green;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.ide a:link, .ide a:visited {
+  background-color: rgb(100, 0, 0);
+  border-color: rgb(100, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.ide a:hover, .ide a:active {
+  background-color: red;
+  border-color: red;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.version-control a:link, .version-control a:visited {
+  background-color: rgb(0, 0, 100);
+  border-color: rgb(0, 0, 100);
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.version-control a:hover, .version-control a:active {
+  background-color: blue;
+  border-color: blue;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.cloud a:link, .cloud a:visited {
+  background-color: transparent !important;
+  border-style: solid;
+}
+
+#cloud-example a:link, #cloud-example a:visited{
+  border-color: black;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#local-example a:link, #local-example a:visited {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #tools-content {
