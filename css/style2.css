@@ -181,3 +181,39 @@ body{
 .card {
   margin: 0px 10vw 0px 10vw
 }
+
+#style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+}
+
+#style li {
+  float: inline-start;
+}
+
+#style li a {
+  display: block;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  font-size: small;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style li a:hover {
+  background-color: grey;
+}
+
+#style {
+  position:fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 26px;
+}
