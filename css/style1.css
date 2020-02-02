@@ -27,6 +27,9 @@ body {
     }
 }
 
+/*
+* Add formatting for content in tool section
+*/
 .tools-container {
   display: flex;
   flex-direction: column;
@@ -41,15 +44,40 @@ body {
   align-items: center;
 }
 
+/*
+ * Change list bullet point to green for cloud class items
+ */
 .cloud {
-  font-family: 'Arial', sans-sans-serif;
-  text-decoration: none;
   color:green;
 }
 
+
+/*
+ * Change list bullet point to red for local class items
+ */
 .local {
-  font-family: 'Arial', sans-sans-serif;
   color: red;
+}
+
+/*
+ * Change font for testing class items
+ */
+.testing {
+  font-family:"Arial Black";
+}
+
+/*
+ * Change font for ide class items
+ */
+.ide {
+  font-family:"Courier New";
+}
+
+/*
+ * Change font for version-control class items
+ */
+.version-control {
+  font-family:"Ariel";
 }
 
 #main-title {
@@ -63,6 +91,13 @@ h2 {
     font-family: 'EB Garamond', serif;
 }
 
+h4 {
+  margin-bottom: -10px;
+}
+
+/*
+* Add box to contain section
+*/
 .section {
     border-radius: 25px;
     padding: 20px;
@@ -85,8 +120,26 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   background-color: #c5adb8;
+}
+
+/*
+ * Formats tool section so that the legend and list of tools are adjacent columns
+ */
+#tools-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#tools-legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
 }
 
 #faculty {
