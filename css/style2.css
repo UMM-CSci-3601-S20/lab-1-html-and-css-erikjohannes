@@ -10,4 +10,226 @@ body{
     padding: 30px;
     background: rgb(131,58,180);
     background: linear-gradient(191deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+  border-style: double;
+  padding: 30px;
+  width: 50vw;
+  margin: 20px 25vw 20px 25vw;
+  background-color: rgba(255, 200, 200, 0.39);
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  padding-left: 15px;
+}
+
+#tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+/*
+* Example of grouping
+*/
+#tools-list, #tools-legend {
+  margin-right: 15%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+@media screen and (min-width: 925px) {
+  #tools-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #tools-list {
+    margin-right: 5%;
+    width: 25%;
+    margin-left: 15%;
+  }
+
+  #tools-legend {
+    margin-left: 5%;
+    width: 25%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (min-width: 1425px) {
+  #tools-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #tools-list {
+    margin-right: 10%;
+    width: 25%;
+    margin-left: 15%;
+  }
+
+  #tools-legend {
+    margin-left: 10%;
+    width: 25%;
+    margin-right: 15%;
+  }
+}
+
+#tools-content ul {
+  list-style-type: none;
+}
+
+#tools-content ul li{
+  margin-bottom: 5px;
+  max-width: 60%;
+}
+
+#tools-content ul li a {
+  width: 100%;
+  border-style: solid;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.testing a:link, .testing a:visited {
+  background-color: rgb(0, 100, 0);
+  border-color: rgb(0, 100, 0);
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.testing a:hover, .testing a:active {
+  background-color: green;
+  border-color: green;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.ide a:link, .ide a:visited {
+  background-color: rgb(100, 0, 0);
+  border-color: rgb(100, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.ide a:hover, .ide a:active {
+  background-color: red;
+  border-color: red;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.version-control a:link, .version-control a:visited {
+  background-color: rgb(0, 0, 100);
+  border-color: rgb(0, 0, 100);
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.version-control a:hover, .version-control a:active {
+  background-color: blue;
+  border-color: blue;
+}
+
+/*
+* Example of both grouping and nesting
+*/
+.cloud a:link, .cloud a:visited {
+  background-color: transparent !important;
+  border-style: solid;
+}
+
+#cloud-example a:link, #cloud-example a:visited{
+  border-color: black;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#local-example a:link, #local-example a:visited {
+  background-color: black;
+  border-color: black;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#tools-content {
+  width: 100%;
+}
+
+.card {
+  margin: 0px 10vw 0px 10vw
+}
+
+#style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+}
+
+#style li {
+  float: inline-start;
+}
+
+#style li a {
+  display: block;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  font-size: small;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style li a:hover {
+  background-color: grey;
+}
+
+#style {
+  position:fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 26px;
 }
