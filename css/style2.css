@@ -6,6 +6,13 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
+title, #main-title {
+font-size: xx-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+position: relative;
+color: whitesmoke;
+}
+
 body{
     padding: 30px;
     background: rgb(131,58,180);
@@ -13,14 +20,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:rgb(218, 231, 247);
 }
 
+
 .section {
-  border-style: double;
+  border-style: hidden;
   padding: 30px;
   width: 50vw;
   margin: 20px 25vw 20px 25vw;
-  background-color: rgba(255, 200, 200, 0.39);
+  background-color: rgb(255, 255, 255, 0.10);
 }
 
 h2 {
@@ -41,6 +50,7 @@ h2 {
   margin-right: 15%;
   width: 70%;
   margin-left: 15%;
+  justify-content: left;
 }
 
 @media screen and (min-width: 925px) {
@@ -99,8 +109,8 @@ h2 {
 * Example of both grouping and nesting
 */
 .testing a:link, .testing a:visited {
-  background-color: rgb(0, 100, 0);
-  border-color: rgb(0, 100, 0);
+  background-color: rgb(255, 138, 29);
+  border-color: rgb(255, 138, 29);
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -112,16 +122,16 @@ h2 {
 * Example of both grouping and nesting
 */
 .testing a:hover, .testing a:active {
-  background-color: green;
-  border-color: green;
+  background-color: rgb(235, 119, 11);
+  border-color: rgb(235, 119, 11);
 }
 
 /*
 * Example of both grouping and nesting
 */
 .ide a:link, .ide a:visited {
-  background-color: rgb(100, 0, 0);
-  border-color: rgb(100, 0, 0);
+  background-color: rgb(255, 131, 131);
+  border-color: rgb(255, 131, 131);
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -133,16 +143,16 @@ h2 {
 * Example of both grouping and nesting
 */
 .ide a:hover, .ide a:active {
-  background-color: red;
-  border-color: red;
+  background-color: rgb(252, 93, 119);
+  border-color: rgb(252, 93, 119);
 }
 
 /*
 * Example of both grouping and nesting
 */
 .version-control a:link, .version-control a:visited {
-  background-color: rgb(0, 0, 100);
-  border-color: rgb(0, 0, 100);
+  background-color: rgb(255, 113, 180);
+  border-color: rgb(255, 113, 180);
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -154,8 +164,8 @@ h2 {
 * Example of both grouping and nesting
 */
 .version-control a:hover, .version-control a:active {
-  background-color: blue;
-  border-color: blue;
+  background-color:rgb(255, 72, 96);
+  border-color: rgb(255, 72, 96);
 }
 
 /*
@@ -167,7 +177,7 @@ h2 {
 }
 
 #cloud-example a:link, #cloud-example a:visited{
-  border-color: black;
+  border-color: white;
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -176,13 +186,14 @@ h2 {
 }
 
 #local-example a:link, #local-example a:visited {
-  background-color: black;
-  border-color: black;
+  background-color: rgb(255,255,255,0.09);
+  border-color: rgb(255,255,255,0);
   color: white;
   text-align: center;
   padding: 14px 25px;
   display: inline-block;
   text-decoration: none;
+
 }
 
 #tools-content {
@@ -198,7 +209,8 @@ h2 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:white;
+  background-color:rgba(255, 255, 255);
+
 }
 
 #style li {
@@ -207,7 +219,7 @@ h2 {
 
 #style li a {
   display: block;
-  color: black;
+  color: rgba(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
   outline: none;
   font-size: small;
@@ -218,7 +230,7 @@ h2 {
 
 /* Change the link background color to #000 (black) on hover */
 #style li a:hover {
-  background-color: grey;
+  background-color: rgb(223, 223, 223);
 }
 
 #style {
