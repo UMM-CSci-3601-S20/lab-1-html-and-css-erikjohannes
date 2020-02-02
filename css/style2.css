@@ -11,3 +11,38 @@ body{
     background: rgb(131,58,180);
     background: linear-gradient(191deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
+
+#style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgb(112,117,141);
+  background: radial-gradient(circle, rgba(112,117,141,1) 0%, rgba(61,69,104,0.16643329695159315) 100%);
+}
+
+#style li {
+  float: center; /*explore what happens if this is 'right' instead*/
+}
+
+#style li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style li a:hover {
+  background: rgb(112,117,141);
+  background: radial-gradient(circle, rgba(112,117,141,1) 0%, rgba(112,126,183,0.5585901596966911) 100%);
+}
+
+#style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 45px;
+}
