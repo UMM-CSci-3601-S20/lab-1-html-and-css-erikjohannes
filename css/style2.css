@@ -204,6 +204,41 @@ h2 {
   margin: 0px 10vw 0px 10vw
 }
 
+/*Faculty*/
+img.pic{
+  border-radius: 30%;
+}
+
+img.pic {
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 75px;
+  margin-top: 15px;
+}
+
+
+#faculty>ul>li {
+  list-style-type: none;
+}
+
+.name {
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well unitl around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
+}
+
 #style ul {
   list-style-type: none;
   margin: 0;
