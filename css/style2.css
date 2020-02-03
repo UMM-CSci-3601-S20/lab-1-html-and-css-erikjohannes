@@ -23,7 +23,13 @@ body{
     color:rgb(218, 231, 247);
 }
 
-
+/*
+* CSS Rule to be graded
+* Hid the border and made the background semi transparent to better fit the color scheme
+* The width of each section is the same and is determined
+*  (along with their margin on the left and right) proportionately to the width of the window
+* Also an example of styling an entire class of elements
+*/
 .section {
   border-style: hidden;
   padding: 30px;
@@ -36,6 +42,9 @@ h2 {
   text-align: center;
 }
 
+/*
+* Example of styling based on the id of an element
+*/
 #tools {
   display: flex;
   flex-direction: column;
@@ -117,6 +126,12 @@ h2 {
   }
 }
 
+/*
+* CSS Rule to be graded
+* Get rid of the bullet points in the unordered list of tools
+* Uses nesting to ensure it doesn't remove the bullet points
+*    of lists in other sections of the page
+*/
 #tools-content ul {
   list-style-type: none;
 }
@@ -132,7 +147,10 @@ h2 {
 }
 
 /*
-* Example of both grouping and nesting
+* CSS Rule to be graded
+* Made the links for the different tools into buttons
+* The color is different depending on what the tool is used for
+* Also an example of both grouping and nesting and styling based on the class of an element
 */
 .testing a:link, .testing a:visited {
   background-color: rgb(255, 138, 29);
@@ -195,7 +213,10 @@ h2 {
 }
 
 /*
-* Example of both grouping and nesting
+* CSS Rule to be graded
+* The button for the tool is not filled if the tool is cloud-based
+* If it's local, the button is filled
+* Also an example of both nesting and grouping
 */
 .cloud a:link, .cloud a:visited {
   background-color: transparent !important;
@@ -226,6 +247,9 @@ h2 {
   width: 100%;
 }
 
+/*
+* Example of styling based on class
+*/
 .card {
   margin: 0px 10vw 0px 10vw
 }
@@ -235,6 +259,11 @@ img.pic{
   border-radius: 30%;
 }
 
+/*
+* CSS Rule to be graded
+* Makes images smaller than in style 1
+* Rounds their corners and adds a bit of a shadow around them
+*/
 img.pic {
   width: 60%;
   background-color: white;
