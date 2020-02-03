@@ -6,6 +6,13 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
+title, #main-title {
+font-size: xx-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+position: relative;
+color: whitesmoke;
+}
+
 body{
     padding: 30px;
     background: rgb(131,58,180);
@@ -13,25 +20,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:rgb(218, 231, 247);
 }
 
+/*
+* CSS Rule to be graded
+* Hid the border and made the background semi transparent to better fit the color scheme
+* The width of each section is the same and is determined
+*  (along with their margin on the left and right) proportionately to the width of the window
+* Also an example of styling an entire class of elements
+*/
 .section {
-  border-style: double;
+  border-style: hidden;
   padding: 30px;
   width: 50vw;
   margin: 20px 25vw 20px 25vw;
-  background-color: rgba(255, 200, 200, 0.39);
+  background-color: rgb(255, 255, 255, 0.10);
 }
 
 h2 {
   text-align: center;
 }
 
-h4 {
-  text-align: center;
-  padding-left: 15px;
-}
-
+/*
+* Example of styling based on the id of an element
+*/
 #tools {
   display: flex;
   flex-direction: column;
@@ -44,8 +57,35 @@ h4 {
 */
 #tools-list, #tools-legend {
   margin-right: 15%;
-  width: 70%;
-  margin-left: 15%;
+  margin-left: -10px;
+  justify-content: left;
+  text-align: center;
+}
+
+#tools-list {
+  width: 60%;
+}
+
+#tools-legend {
+  width: 80%;
+}
+
+@media screen and (min-width: 500px) {
+
+  #tools-list, #tools-legend {
+    margin-right: 15%;
+    margin-left: 15%;
+    justify-content: left;
+    text-align: center;
+  }
+
+  #tools-list {
+    width: 60%;
+  }
+
+  #tools-legend {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 925px) {
@@ -86,6 +126,12 @@ h4 {
   }
 }
 
+/*
+* CSS Rule to be graded
+* Get rid of the bullet points in the unordered list of tools
+* Uses nesting to ensure it doesn't remove the bullet points
+*    of lists in other sections of the page
+*/
 #tools-content ul {
   list-style-type: none;
 }
@@ -101,11 +147,14 @@ h4 {
 }
 
 /*
-* Example of both grouping and nesting
+* CSS Rule to be graded
+* Made the links for the different tools into buttons
+* The color is different depending on what the tool is used for
+* Also an example of both grouping and nesting and styling based on the class of an element
 */
 .testing a:link, .testing a:visited {
-  background-color: rgb(0, 100, 0);
-  border-color: rgb(0, 100, 0);
+  background-color: rgb(255, 138, 29);
+  border-color: rgb(255, 138, 29);
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -117,16 +166,16 @@ h4 {
 * Example of both grouping and nesting
 */
 .testing a:hover, .testing a:active {
-  background-color: green;
-  border-color: green;
+  background-color: rgb(235, 119, 11);
+  border-color: rgb(235, 119, 11);
 }
 
 /*
 * Example of both grouping and nesting
 */
 .ide a:link, .ide a:visited {
-  background-color: rgb(100, 0, 0);
-  border-color: rgb(100, 0, 0);
+  background-color: rgb(255, 131, 131);
+  border-color: rgb(255, 131, 131);
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -138,16 +187,16 @@ h4 {
 * Example of both grouping and nesting
 */
 .ide a:hover, .ide a:active {
-  background-color: red;
-  border-color: red;
+  background-color: rgb(252, 93, 119);
+  border-color: rgb(252, 93, 119);
 }
 
 /*
 * Example of both grouping and nesting
 */
 .version-control a:link, .version-control a:visited {
-  background-color: rgb(0, 0, 100);
-  border-color: rgb(0, 0, 100);
+  background-color: rgb(255, 113, 180);
+  border-color: rgb(255, 113, 180);
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -159,12 +208,15 @@ h4 {
 * Example of both grouping and nesting
 */
 .version-control a:hover, .version-control a:active {
-  background-color: blue;
-  border-color: blue;
+  background-color:rgb(255, 72, 96);
+  border-color: rgb(255, 72, 96);
 }
 
 /*
-* Example of both grouping and nesting
+* CSS Rule to be graded
+* The button for the tool is not filled if the tool is cloud-based
+* If it's local, the button is filled
+* Also an example of both nesting and grouping
 */
 .cloud a:link, .cloud a:visited {
   background-color: transparent !important;
@@ -172,7 +224,7 @@ h4 {
 }
 
 #cloud-example a:link, #cloud-example a:visited{
-  border-color: black;
+  border-color: white;
   color: white;
   text-align: center;
   padding: 14px 25px;
@@ -181,21 +233,66 @@ h4 {
 }
 
 #local-example a:link, #local-example a:visited {
-  background-color: black;
-  border-color: black;
+  background-color: rgb(255,255,255,0.09);
+  border-color: rgb(255,255,255,0);
   color: white;
   text-align: center;
   padding: 14px 25px;
   display: inline-block;
   text-decoration: none;
+
 }
 
 #tools-content {
   width: 100%;
 }
 
+/*
+* Example of styling based on class
+*/
 .card {
   margin: 0px 10vw 0px 10vw
+}
+
+/*Faculty*/
+img.pic{
+  border-radius: 30%;
+}
+
+/*
+* CSS Rule to be graded
+* Makes images smaller than in style 1
+* Rounds their corners and adds a bit of a shadow around them
+*/
+img.pic {
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 75px;
+  margin-top: 15px;
+}
+
+
+#faculty>ul>li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.name {
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well unitl around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
 }
 
 #style ul {
@@ -203,7 +300,8 @@ h4 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:white;
+  background-color:rgba(255, 255, 255);
+
 }
 
 #style li {
@@ -212,7 +310,7 @@ h4 {
 
 #style li a {
   display: block;
-  color: black;
+  color: rgba(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
   outline: none;
   font-size: small;
@@ -223,7 +321,7 @@ h4 {
 
 /* Change the link background color to #000 (black) on hover */
 #style li a:hover {
-  background-color: grey;
+  background-color: rgb(223, 223, 223);
 }
 
 #style {
