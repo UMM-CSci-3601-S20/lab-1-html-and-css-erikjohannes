@@ -327,6 +327,17 @@ img.pic {
   background-color: rgb(223, 223, 223);
 }
 
+
+#style {
+  position: fixed;
+  background-color:white;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  padding-top: 1px;
+}
+
 #style {
   position:fixed;
   left: 0;
