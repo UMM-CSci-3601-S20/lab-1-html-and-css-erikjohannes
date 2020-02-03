@@ -48,9 +48,35 @@ h2 {
 */
 #tools-list, #tools-legend {
   margin-right: 15%;
-  width: 70%;
-  margin-left: 15%;
+  margin-left: -10px;
   justify-content: left;
+  text-align: center;
+}
+
+#tools-list {
+  width: 60%;
+}
+
+#tools-legend {
+  width: 80%;
+}
+
+@media screen and (min-width: 500px) {
+
+  #tools-list, #tools-legend {
+    margin-right: 15%;
+    margin-left: 15%;
+    justify-content: left;
+    text-align: center;
+  }
+
+  #tools-list {
+    width: 60%;
+  }
+
+  #tools-legend {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 925px) {
@@ -220,6 +246,7 @@ img.pic {
 
 #faculty>ul>li {
   list-style-type: none;
+  text-align: center;
 }
 
 .name {
